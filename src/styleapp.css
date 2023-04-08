@@ -81,3 +81,11 @@ html,body{
 #dark .switch label {
     color: white;
 }
+
+#light .horizontal-line{
+    background-color: rgb(44, 41, 41);;
+}
+
+#dark .horizontal-line{
+    background-color: rgb(226, 223, 223);;
+}

@@ -24,21 +24,38 @@ dodatkowo, importuję zewnętrzny plik css i dodatkowo modyfikuję co potrzeba *
     font-size: 20px;
 }
 
-.number{
+#dark .number{
     font-size:25px;
-    color: goldenrod;
+    color: rgb(74, 54, 4);
 }
 
-.trend-up{
-    color:rgb(0, 255, 94);
+#light .number{
+    font-size:25px;
+    color: rgb(104, 74, 0);
 }
 
-.trend-down{
-    color:red;
+#dark .trend-up{
+    color:rgb(99, 180, 129);
 }
 
-.trend-even{
-    color:blue
+#dark .trend-down{
+    color:rgb(179, 118, 118);
+}
+
+#dark .trend-even{
+    color:rgb(81, 105, 243)
+}
+
+#light .trend-up{
+    color:rgb(0, 108, 40);
+}
+
+#light .trend-down{
+    color:rgb(101, 0, 0);
+}
+
+#light .trend-even{
+    color:rgb(4, 17, 94)
 }
 
 .logo{
@@ -53,8 +70,18 @@ dodatkowo, importuję zewnętrzny plik css i dodatkowo modyfikuję co potrzeba *
     border-radius: 8px;
     /* padding: 80px; */
     
-    background-color: rgb(73, 83, 93);
+    /* background-color: rgb(73, 83, 93);
+    color: aliceblue; */
+}
+
+#dark .widget{
+    background-color: rgb(60, 67, 73);
     color: aliceblue;
+}
+
+#light .widget{
+    background-color: rgb(178, 183, 188);
+    color: rgb(23, 24, 24);
 }
 
 .widget-no-space{
@@ -109,4 +136,14 @@ dodatkowo, importuję zewnętrzny plik css i dodatkowo modyfikuję co potrzeba *
 .align-vertically{
 
  padding: 80px 80px 80px 80px ;
+}
+
+#dark .button{
+    color: white;
+    background-color: rgb(64, 139, 237);
+}
+
+#light .button{
+    color: black;
+    background-color: rgb(134, 168, 210);
 }

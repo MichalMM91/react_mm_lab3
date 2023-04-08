@@ -25,14 +25,16 @@ const App = () => {
       return (
         <ThemeContext.Provider value={{ theme, toggleTheme}}>
         <div className="App" id={theme} >
-        <div className="switch">
-          
-          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
-          <label> {theme === "light" ? "Tryb dzienny " : "Tryb nocny "}</label>
-        </div>
+        
             <div className="columns is-gapless">
               <div className="column is-one-fifth">
                 <LeftBar/>
+                <hr className='horizontal-line'></hr>
+                <div className="switch">
+          
+                  <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+                  <label> {theme === "light" ? "Day mode" : "Night Mode"}</label>
+                </div>
               </div>
               <div className="centered-inside column">
                 <Content/>

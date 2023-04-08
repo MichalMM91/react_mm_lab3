@@ -23,7 +23,7 @@ function ComponentTop() {
                         <span className="icon">
                             <Icon icon="fa6-regular:comments" />
                         </span>
-                        <span>Chat</span>
+                        <span><b>Chat</b></span>
                     </button>
                      
                      

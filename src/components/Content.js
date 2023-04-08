@@ -17,32 +17,32 @@ function Content() {
        
           <div >
             
-            <div className="m-3  columns is-desktop">
-              <div className="m-3 widget column is-three-quarters">
+            <div className="m-2  columns is-desktop">
+              <div className="m-2 widget column is-three-quarters">
                 <ComponentTop/>
               </div>
                 
             </div>
-            <div className="m-3  columns is-multiline is-desktop">
-              <div className="widget m-3 block column is-half">
+            <div className="m-2  columns is-multiline is-desktop">
+              <div className="widget m-2 block column is-half">
                 <ComponentIntro/>
               </div>
-              <div className="widget m-3  column is-one-quarter">
+              <div className="widget m-2  column is-one-quarter">
               <ComponentStandard nameofcomp="Profit" amount="$6545" trend="+28%" trendstyle="trend-up"/>
               </div>
-              <div className="widget m-3  column is-half">
+              <div className="widget m-2  column is-half">
               <ComponentChart/>
               </div>
-              <div className="widget m-3  column is-one-quarter">
+              <div className="widget m-2  column is-one-quarter">
               <ComponentReport/>
               </div>
-              <div className="widget m-3  column is-one-quarter">
+              <div className="widget m-2  column is-one-quarter">
               <ComponentStandard nameofcomp="Sales" amount="$4432" trend="-2%" trendstyle="trend-down"/>
               </div>
-              <div className="widget m-3  column is-one-quarter">
+              <div className="widget m-2  column is-one-quarter">
               <ComponentStandard nameofcomp="Payments" amount="$7526" trend="-13%" trendstyle="trend-down"/>
               </div>
-              <div className="widget m-3  column is-one-quarter">
+              <div className="widget m-2  column is-one-quarter">
               <ComponentStandard nameofcomp="Transactions" amount="$8675" trend="0%" trendstyle="trend-even"/>
               </div>
   
