@@ -10,10 +10,11 @@ import ComponentChart from "./ComponentChart";
 import ComponentReport from "./ComponentReport";
 import 'bulma/css/bulma.min.css';
 import './style.css';
+import FontSizeChanger from 'react-font-size-changer';
 
 function Content() {
     return (
-        
+       
           <div >
             
             <div className="m-3  columns is-desktop">

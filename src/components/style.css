@@ -1,6 +1,13 @@
 /* Zad 2 Oto style w pliku zewnętrznym które mogą być importowane do komponentów */
 /* całe stylizowanie jest wykonane przy użyciu klas z bulmy - tabele, inputy
 dodatkowo, importuję zewnętrzny plik css i dodatkowo modyfikuję co potrzeba */
+
+
+#dark {background-color: rgb(44, 41, 41);}
+#light {background-color: rgb(226, 223, 223);}
+ 
+
+
 .red-text{
     color: rgb(130, 90, 30);
 }
@@ -39,10 +46,13 @@ dodatkowo, importuję zewnętrzny plik css i dodatkowo modyfikuję co potrzeba *
     color:rgb(35, 122, 193)
 }
 
+
+
 .widget{
     /* margin: 16px 16px 16px 16px; */
     border-radius: 8px;
     /* padding: 80px; */
+    
     background-color: rgb(73, 83, 93);
     color: aliceblue;
 }
