@@ -1,0 +1,102 @@
+/* Zad 2 Oto style w pliku zewnętrznym które mogą być importowane do komponentów */
+/* całe stylizowanie jest wykonane przy użyciu klas z bulmy - tabele, inputy
+dodatkowo, importuję zewnętrzny plik css i dodatkowo modyfikuję co potrzeba */
+.red-text{
+    color: rgb(130, 90, 30);
+}
+
+.fontBig{
+    font-size: 40px;
+}
+
+.fontMedium{
+    font-size: 30px;
+}
+
+.fontSmall{
+    font-size: 20px;
+}
+
+.number{
+    font-size:25px;
+    color: goldenrod;
+}
+
+.trend-up{
+    color:rgb(0, 255, 94);
+}
+
+.trend-down{
+    color:red;
+}
+
+.trend-even{
+    color:blue
+}
+
+.logo{
+    font-size: x-large;
+    color:rgb(35, 122, 193)
+}
+
+.widget{
+    /* margin: 16px 16px 16px 16px; */
+    border-radius: 8px;
+    /* padding: 80px; */
+    background-color: rgb(73, 83, 93);
+    color: aliceblue;
+}
+
+.widget-no-space{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 8px;
+    /* padding: 80px; */
+    
+}
+
+.background-lightgray {
+    background-color: lightgray;
+}
+
+.background-lightblue {
+    background-color: lightblue
+}
+
+.content {
+    max-width: 100vw;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  rgb(8, 84, 183);
+    min-height: 50px;
+    max-width: 20vw;
+    min-width: 200px;
+}
+
+.nav-item {
+    padding: 15px 5px 10px 5px;
+    text-decoration: none;
+    color: rgb(196, 198, 196);
+}
+
+.nav-item:hover {
+    color: white;
+    background-color:  rgb(7, 60, 130);
+}
+.img-big{
+  width:50vw
+}
+.img-small{
+  width:80vw;
+  display: flex;
+}
+
+.align-vertically{
+
+ padding: 80px 80px 80px 80px ;
+}

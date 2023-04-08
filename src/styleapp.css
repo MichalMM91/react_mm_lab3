@@ -1,0 +1,57 @@
+/* Zad 2 Oto style GLOBALNE w pliku zewnętrznym które mogą być importowane do komponentów */
+html,body{
+    height:100%;
+     min-height:100%; 
+     background-color: rgb(44, 41, 41);
+     font-family: consolas;
+    
+    }
+    
+.centered-inside{
+    display: flex;
+    margin:auto;
+}
+
+.wide{
+    width: 80vw;
+    margin: auto;
+}
+
+.standard{
+    width:20vw;
+    margin: auto;
+}
+
+.red-text{
+    color: rgb(130, 90, 30);
+}
+
+.background-lightgray {
+    background-color: lightgray;
+}
+
+.background-lightblue {
+    background-color: lightblue
+}
+
+.content {
+    max-width: 80vw;
+    height: 100vh;
+}
+
+.left-menu {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  rgb(8, 84, 183);
+    height: 100vh;
+    max-width: 20vw;
+    min-width: 200px;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
