@@ -11,6 +11,7 @@ function LeftBar() {
         <div className="left-bar is-dark">
             <div className="block logo">
               <h1><Icon icon="mdi:cloud-circle-outline" /> SharpInterfaces.com</h1>
+              
             </div>
             <aside className="menu">
               <ul className="menu-list">
