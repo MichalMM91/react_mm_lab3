@@ -11,7 +11,8 @@ import { createContext } from 'react';
 import {useState} from 'react';
 import './components/style.css';
 import ReactSwitch from 'react-switch';
-
+import FontSizeChanger from 'react-font-size-changer';
+import { Icon } from '@iconify/react';
 
 export const ThemeContext = createContext(null);
 
@@ -30,10 +31,31 @@ const App = () => {
               <div className="column is-one-fifth">
                 <LeftBar/>
                 <hr className='horizontal-line'></hr>
-                <div className="switch">
-          
-                  <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
-                  <label> {theme === "light" ? "Day mode" : "Night Mode"}</label>
+                <div className="switch rows">
+                  <div class="row">
+                    <label> {theme === "light" ? "Day mode" : "Night Mode"}</label>
+                    <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
+                  </div>
+                  <div>  
+                    <label>Adjust font size</label>
+                    <FontSizeChanger
+                      targets={['.App']}
+                      options={{
+                        stepSize: 1,
+                        range: 4
+                      }}
+                    customButtons={{
+                      up: <Icon id="icon" icon="material-symbols:text-increase" />,
+                      down: <Icon id="icon" icon="material-symbols:text-decrease" />,
+                      style: {
+                        WebkitBorderRadius: '10px',
+                        width: '50px',
+                        height: '35px',
+                        border: 0,
+                      },
+                      buttonsMargin: 5}}/>
+                      
+                    </div>
                 </div>
               </div>
               <div className="centered-inside column">

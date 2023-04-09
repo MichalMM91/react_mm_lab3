@@ -89,3 +89,16 @@ html,body{
 #dark .horizontal-line{
     background-color: rgb(226, 223, 223);;
 }
+
+#dark #icon {
+    background-color: rgb(122, 121, 118);
+    height: 35px;
+    width: 50px;
+    border-radius: 10%;
+}
+#light #icon {
+    background-color: rgb(201, 200, 196);
+    height: 35px;
+    width: 50px;
+    border-radius: 10%;
+}
