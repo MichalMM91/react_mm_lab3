@@ -1,8 +1,9 @@
-Przygotowano przez:
-Michał Maciejewski
-64262
-PA1.2 Informatyka niestacjonarne sem IV
-WSB Gdańsk
+Projekt realizowany w ramach przedmiotu Tworzenie Interfejsów React w technologii React.
+Przedstawia interfejs RWD oparty o box-model z wysoką dostępnością - funkcjonalnościami przełączania motywów z jasnego na ciemny i z powrotem oraz regulowania wielkości czcionki na przycisk.
+
+Słowa kluczowe:
+bulma, font-size-changer, switch, box model
+
 
 # Getting Started with Create React App
 
