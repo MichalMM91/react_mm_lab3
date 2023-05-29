@@ -1,29 +1,30 @@
 import React, { useState } from "react";
 import { MessageCircle, XCircle } from "react-feather";
+import { Icon } from "@iconify/react";
 
 const ChatBox = () => {
   const [opened, setOpen] = useState(false);
 
   if (!opened)
     return (
-      <div
-        style={{
-          borderRadius: "50%",
-          border: "2px solid black",
-          width: 32,
-          height: 32,
-          float: "right",
-        }}
-      >
-        <MessageCircle onClick={() => setOpen(true)} />
-      </div>
+      
+      <div className="buttons">
+                    <button onClick={() => setOpen(true)} className="button is-info">
+                        <span className="icon">
+                            <Icon icon="fa6-regular:comments" />
+                        </span>
+                        <span><b>Chat</b></span>
+                    </button>
+                     
+                     
+                </div>
     );
 
   return (
     opened && (
-      <div style={{ border: "1px solid black", borderRadius: 10 }}>
-        <XCircle onClick={() => setOpen(false)} />
-        <input type="textArea" />
+      <div class="box">
+          <XCircle onClick={() => setOpen(false)} />
+          <input class="input is-info" type="text" placeholder="Chat with AI..."/>
       </div>
     )
   );

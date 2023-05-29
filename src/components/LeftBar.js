@@ -5,7 +5,7 @@ import './style.css';
 import 'bulma/css/bulma.min.css';
 import { Icon } from '@iconify/react';
 import { Link } from "react-router-dom";
-
+import ChatBox from "./ChatBox";
 
 
 
@@ -18,13 +18,8 @@ function LeftBar() {
             </div>
             <aside className="menu">
               <ul className="menu-list">
-                <li><a className="is-active"><Icon icon="material-symbols:activity-zone" /> 
-                
-                  <Link to="/dashboard">Dashboard</Link>
-                </a></li>
-                <li><a><Icon icon="material-symbols:assistant-on-hub-sharp" /> 
-                  <Link to="/layouts">Layouts</Link>
-                </a></li>
+                <li><Link to="/dashboard"><Icon icon="material-symbols:activity-zone" />  Dashboard</Link></li>                
+                <li><Link to="/layouts"><Icon icon="material-symbols:assistant-on-hub-sharp" />  Layouts</Link></li>              
               </ul>
               <p className=" m-2 menu-label">
                 Pages
@@ -50,7 +45,7 @@ function LeftBar() {
                 <li><a>Cards</a></li>
               </ul>
             </aside>
-            
+            <ChatBox/>
         </div>
 
 

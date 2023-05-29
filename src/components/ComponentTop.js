@@ -21,9 +21,9 @@ function ComponentTop() {
                 <div className="buttons">
                     <button className="button is-info">
                         <span className="icon">
-                            <Icon icon="fa6-regular:comments" />
+                            <Icon  icon="mingcute:search-fill" /> 
                         </span>
-                        <span><b>Chat</b></span>
+                        <span><b>Search</b></span>
                     </button>
                      
                      

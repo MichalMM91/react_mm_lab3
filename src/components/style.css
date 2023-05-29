@@ -6,6 +6,9 @@ dodatkowo, importuję zewnętrzny plik css i dodatkowo modyfikuję co potrzeba *
 #dark {background-color: rgb(44, 41, 41);}
 #light {background-color: rgb(226, 223, 223);}
  
+.big{
+    font-size: x-large;
+}
 
 
 .red-text{

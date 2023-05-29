@@ -21,7 +21,6 @@ import {
   Routes,
   Navigate
 } from "react-router-dom";
-import ChatBox from "./components/ChatBox";
 import Layouts from './components/Layouts';
 
 import LoginPage from "./components/LoginPage";
@@ -76,37 +75,40 @@ const App = () => {
                 </div>
               </div>
               <div className="centered-inside column">
-                <Content/>
+                  
+                      <Routes>
+                      <Route exact path="/login" Component={LoginPage} />
+                        <Route
+                        exact
+                        path="/dashboard"
+                        element={
+                          <PrivateRoute user={user}>
+                            
+                            <Content />
+                          </PrivateRoute>
+                        }
+                  />
+                  <Route
+                    exact
+                    path="/layouts"
+                    element={
+                      <PrivateRoute user={user}>
+                        <Layouts />
+                      </PrivateRoute>
+                    }
+                  />
+                      
+                      <Route  path="/" element={<Navigate to="/dashboard" replace />} />
+                      <Route  path="*" element={<Navigate to="/dashboard" replace />} />
+                    
+                    </Routes>
               </div>
             </div>
-            <Routes>
-            <Route exact path="/login" Component={LoginPage} />
-          <Route
-            exact
-            path="/dashboard"
-            element={
-              <PrivateRoute user={user}>
-                <Content />
-              </PrivateRoute>
-            }
-          />
-          <Route
-            exact
-            path="/layouts"
-            element={
-              <PrivateRoute user={user}>
-                <Layouts />
-              </PrivateRoute>
-            }
-          />
-              
-              <Route  path="/" element={<Navigate to="/dashboard" replace />} />
-              <Route  path="*" element={<Navigate to="/dashboard" replace />} />
             
-            </Routes>
             </Router>
-            <ChatBox/>
+            
         </div>
+        
       </ThemeContext.Provider>
       );
 

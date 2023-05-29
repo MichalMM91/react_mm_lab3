@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "user": "MM",
+      "user": "guest",
       "password": "123",
       "email": "email@email.com"
     }

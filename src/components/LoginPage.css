@@ -1,14 +1,18 @@
 .auth-form-desktop {
-    background-color: azure;
+    background-color: rgba(40, 40, 40, 0.236);
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 33vh;
-    width: 400px;
+    margin-top: 20vh;
+    /* width: 600px; */
+    width: 60vw;
+    /* height: 400px; */
+    height: 500px;
     border-radius: 10px;
-    padding-bottom: 24px;
-    padding-top: 40px;
+    padding-top: 20vh;
     text-align: center;
-    margin-left: 40vw;
+     /* margin-left: 30vw; */
+    margin: auto;
+
   }
   
   .auth-form-mobile {
