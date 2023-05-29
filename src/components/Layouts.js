@@ -6,7 +6,7 @@ import './style.css';
 function Layouts() {
     return (
         <div>
-            <h1>Got here using Router</h1>
+            <h1>Layouts</h1>
         </div>
         
     )

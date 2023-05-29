@@ -13,10 +13,26 @@ import './components/style.css';
 import ReactSwitch from 'react-switch';
 import FontSizeChanger from 'react-font-size-changer';
 import { Icon } from '@iconify/react';
+import './App.css';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate
+} from "react-router-dom";
+import ChatBox from "./components/ChatBox";
+import Layouts from './components/Layouts';
+
+import LoginPage from "./components/LoginPage";
+import PrivateRoute from "./components/PrivateRoute";
 
 export const ThemeContext = createContext(null);
 
 const App = () => {
+      
+      const user = sessionStorage.getItem("uid");
+  
       const [theme, setTheme] = useState("dark");
       
       const toggleTheme = () => {
@@ -26,13 +42,14 @@ const App = () => {
       return (
         <ThemeContext.Provider value={{ theme, toggleTheme}}>
         <div className="App" id={theme} >
-        
+        <Router>
             <div className="columns is-gapless">
               <div className="column is-one-fifth">
                 <LeftBar/>
+                
                 <hr className='horizontal-line'></hr>
                 <div className="switch rows">
-                  <div class="row">
+                  <div className="row">
                     <label> {theme === "light" ? "Day mode" : "Night Mode"}</label>
                     <ReactSwitch onChange={toggleTheme} checked={theme === "dark"}/>
                   </div>
@@ -62,6 +79,33 @@ const App = () => {
                 <Content/>
               </div>
             </div>
+            <Routes>
+            <Route exact path="/login" Component={LoginPage} />
+          <Route
+            exact
+            path="/dashboard"
+            element={
+              <PrivateRoute user={user}>
+                <Content />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            exact
+            path="/layouts"
+            element={
+              <PrivateRoute user={user}>
+                <Layouts />
+              </PrivateRoute>
+            }
+          />
+              
+              <Route  path="/" element={<Navigate to="/dashboard" replace />} />
+              <Route  path="*" element={<Navigate to="/dashboard" replace />} />
+            
+            </Routes>
+            </Router>
+            <ChatBox/>
         </div>
       </ThemeContext.Provider>
       );
